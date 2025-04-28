@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecRoster - Choose Account Type</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#2E294E'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFF9F5;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center font-inter">
+    <div class="w-full max-w-md p-8 bg-white rounded-2xl shadow-lg">
+        <h1 class="text-4xl font-poppins font-semibold text-primary text-center mb-12">SecRoster</h1>
+        
+        <h2 class="text-xl text-center text-gray-700 mb-8">Sign Up as</h2>
+        
+        <div class="space-y-4">
+            <a href="company-signup.html" class="block w-full p-4 text-center bg-white border-2 border-gray-200 rounded-xl hover:border-primary hover:text-primary transition duration-300">
+                <i class="fas fa-building mr-2"></i>
+                Company
+            </a>
+            
+            <div class="relative">
+                <hr class="border-gray-200">
+                <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-gray-500">or</span>
+            </div>
+            
+            <a href="guard-signup.html" class="block w-full p-4 text-center bg-white border-2 border-gray-200 rounded-xl hover:border-primary hover:text-primary transition duration-300">
+                <i class="fas fa-user-shield mr-2"></i>
+                Guard
+            </a>
+        </div>
+        
+        <p class="mt-8 text-center text-gray-600">
+            Already have an account? 
+            <a href="login.html" class="text-primary hover:underline">Login</a>
+        </p>
+    </div>
+</body>
+</html>
